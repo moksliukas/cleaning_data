@@ -4,7 +4,7 @@ library(matrixStats)
 
 y_test<-read.table("./UCI HAR Dataset/test/y_test.txt", header=F, quote="\"")
 x_test<-read.table("./UCI HAR Dataset/test/x_test.txt", header=F, quote="\"")
-subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt", header=F, quote="\"")
+# subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt", header=F, quote="\"")
 
 rez_test<-cbind(y_test,subject_test, x_test)
 
@@ -24,8 +24,7 @@ names(final_rez)[2]<-paste("A2")
 
 number_of_columns<-ncol(final_rez)
 all_means<-colMeans(final_rez[3:number_of_columns])
-all_dev<-colSds(final_rez[3:number_of_columns])
-
+all_dev<-colSds(as.matrix(final_rez[3:number_of_columns]))
 
 # 3 step. Uses descriptive activity names to name the activities in the data set
 # 4 step. Appropriately labels the data set with descriptive variable names.
@@ -42,6 +41,7 @@ labels<-append(f,f_l)
 colnames(final_rez)<-labels
 
 mergedData=merge(labels1, final_rez, by.x="A1", by.y="Activities" )
+
 mergedData$A1 <- NULL
 names(mergedData)[1]<-paste("Activities")
 
@@ -49,6 +49,9 @@ names(mergedData)[1]<-paste("Activities")
 #         with the average of each variable for each activity and each subject.
 
 aggdata <-aggregate(mergedData[3:ncol(mergedData)], by=list(mergedData$Label, mergedData$Activities), FUN=mean)
+
+names(aggdata)[1]<-paste("Label")
+names(aggdata)[2]<-paste("Activities")
 
 write.table(aggdata, "final.txt", row.name=FALSE) 
 
