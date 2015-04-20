@@ -92,6 +92,6 @@ write.table(aggdata, "final.txt", row.name=FALSE)
 
 ![Finish][id2]
 
-[id]: figures/first.png "First picture"
-[id1]: figures/second.png "Second"
+[id]:figures/first.PNG "First picture"
+[id1]:figures/second.PNG "Second"
 [id2]:http://static6.depositphotos.com/1150740/642/v/950/depositphotos_6420662-Finishing-runner-with-finished-ribbon.jpg "Finish"
