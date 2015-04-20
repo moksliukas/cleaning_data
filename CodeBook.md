@@ -73,7 +73,7 @@ Simple R code change first final date column name to **Activities**
 mergedData$A1 <- NULL
 names(mergedData)[1]<-paste("Activities")
 ```
-## 5 step. From the data set in step 4, creates a second, independent tidy data set  with the average of each variable for each activity and each subject.
+### 5 step. From the data set in step 4, creates a second, independent tidy data set  with the average of each variable for each activity and each subject.
 
 ###Variables
 
@@ -93,5 +93,5 @@ write.table(aggdata, "final.txt", row.name=FALSE)
 ![Finish][id2]
 
 [id]: figures/first.png "First picture"
-[id1]: figures/second.png "Second picture"
+[id1]: figures/second.png "Second"
 [id2]:http://static6.depositphotos.com/1150740/642/v/950/depositphotos_6420662-Finishing-runner-with-finished-ribbon.jpg "Finish"
