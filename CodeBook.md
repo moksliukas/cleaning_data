@@ -9,13 +9,13 @@ The R script have 5 steps.
 
 Variable      | Description
 --------------|------------
-y_test        |
-x_test        |
-subject_test  |
-rez_test      |
-y_train       |
-x_train       |
-subject_train |
-rez_train     |
-final_rez     |
+y_test        |Store data from y_test.txt file
+x_test        |Store data from X_test.txt file
+subject_test  |Store data from subject_test.txt file
+rez_test      |Store merged test data
+y_train       |Store data from y_train.txt file
+x_train       |Store data from X_train.txt file
+subject_train |Store data from subject_train.txt file
+rez_train     |Store merged train data
+final_rez     |Store merged test and train data
 
