@@ -1,4 +1,5 @@
-# cleaning_data
+# Getting And Cleaning Data - Course Project
+
 Repository for Coursera MOOC course Getting and Cleaning Data
 
 How to start script.
