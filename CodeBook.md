@@ -12,4 +12,10 @@ Variable      | Description
 y_test        |
 x_test        |
 subject_test  |
+rez_test      |
+y_train       |
+x_train       |
+subject_train |
+rez_train     |
+final_rez     |
 
