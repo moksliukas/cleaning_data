@@ -68,7 +68,7 @@ mergedData          | Merge and store final datasets and column name
 
 ###Comment for this step
 
-Simple R code change first final date column name to **Activities**
+Simple R code change first final data column name to **Activities**
 ```{r}
 mergedData$A1 <- NULL
 names(mergedData)[1]<-paste("Activities")
