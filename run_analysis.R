@@ -1,3 +1,7 @@
+
+if("matrixStats" %in% rownames(installed.packages()) == FALSE) 
+  {install.packages("matrixStats")}
+
 library(matrixStats)
 
 # 1 step. Merges the training and the test sets to create one data set.
