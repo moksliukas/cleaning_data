@@ -4,13 +4,11 @@ Repository for Coursera MOOC course Getting and Cleaning Data
 
 How to start script.
 
-1. Create RStudio project.
-2. Download file run_analysis.R from https://github.com/moksliukas/cleaning_data/
-3. Upload file run_analysis.R to your project.
-4. Download data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-5. Unzip these data to your project (data folder must be UCI HAR Dataset)
-6. **R script using library matrixStats. If you don't have this library - download and install from CRAN.**
-7. Run R project file **cleaning_data.Rproj**.
-8. Load and run the script **run_analysis.R**
-8. After some time in project folder will appear file final.txt.
-9. That's all.
+1. Clone  https://github.com/moksliukas/cleaning_data/ github.
+2. Download data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+3. Unzip these data to your project (data folder must be UCI HAR Dataset)
+4. **R script using library matrixStats. If you don't have this library - download and install from CRAN.**
+5. Run R project file **cleaning_data.Rproj**.
+6. Load and run the script **run_analysis.R**
+7. After some time in project folder will appear file final.txt.
+8. That's all.
