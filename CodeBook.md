@@ -1,6 +1,13 @@
 # Welcome to main R script CodeBook
 
-The R script have 5 steps.
+
+
+###Checking for package matrixStats. 
+
+```{r}
+if("matrixStats" %in% rownames(installed.packages()) == FALSE) 
+  {install.packages("matrixStats")}
+```
 
 ### 1 step. Merges the training and the test sets to create one data set.
 
