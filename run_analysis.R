@@ -4,7 +4,7 @@ library(matrixStats)
 
 y_test<-read.table("./UCI HAR Dataset/test/y_test.txt", header=F, quote="\"")
 x_test<-read.table("./UCI HAR Dataset/test/x_test.txt", header=F, quote="\"")
-# subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt", header=F, quote="\"")
+subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt", header=F, quote="\"")
 
 rez_test<-cbind(y_test,subject_test, x_test)
 
