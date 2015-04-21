@@ -11,6 +11,6 @@ How to start script.
 5. Unzip these data to your project (data folder must be UCI HAR Dataset)
 6. **R script using library matrixStats. If you don't have this library - download and install from CRAN.**
 7. Run R project file **cleaning_data.Rproj**.
-8. Load script and run the **run_analysis.R**
+8. Load and run the script **run_analysis.R**
 8. After some time in project folder will appear file final.txt.
 9. That's all.
